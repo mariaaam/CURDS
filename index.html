@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS</title>
+    <!-- -------------------------bootsrap------------------------------ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- ---------------------------------------style css------------------- -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+          <!-- -------------------form------- -->
+          <!-- <video id="background-video" autoplay loop muted >
+            <source src="vedio/2.mp4"type="video/mp4">
+          </video>
+           -->
+  <div class="container pt-5">
+    <h1 class="text-center mt-4 fw-bold "> * CURD Operation *</h1>
+    <form class="mt-3">
+        
+       <div class="form-group mb-4 w-75 parent m-auto">
+          <label for="ProductName"  class="fw-bold"  >Product Name :</label>
+          <input type="text" class="form-control mt-2" id="ProductName" placeholder="Product Name"  >
+
+          <label for="ProductPrice" class="mt-3 fw-bold">Product Price :</label>
+          <input type="number" class="form-control mt-2 " id="ProductPrice" placeholder="Product Price"  >
+
+
+          <label for="ProductCatg" class="mt-3 fw-bold">Product Cateory :</label>
+          <input type="text" class="form-control mt-2 " id="ProductCatg"  placeholder="Product Cateory">
+
+          
+          <label for="ProductDesc" class="mt-3 fw-bold">Product Description:</label  >
+          <textarea class="form-control mt-2 mb-4 " id="ProductDesc" placeholder="Product Description"></textarea>
+
+        
+
+          <button class=" fw-bold btnAdd btn btn-success " id="btnAdd" type="button" onclick="AddProduct()" > 
+            Add Product</button>
+
+            <button class="btn btn-warning d-none fw-bold" id=" btnUpdate" onclick="UpdateProduct()">Update Product</button>
+         
+        </div>
+
+        
+        
+       
+        
+       
+      </form>
+      <input placeholder="Search ProductName...." type="text" oninput="SearchProduct(this.value)" class="form-control mt-2 w-50   m-auto">
+    </div>
+
+
+      
+    
+
+      <!-- ---------------------table--------------- -->
+      <div class="container mt-5">
+        <table class="table text-center mb-3 mt-3  w-75 m-auto  parent">
+          <thead>
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Name</th>
+              <th scope="col">Price</th>
+              <th scope="col">Cateory</th>
+              <th scope="col">Description</th>
+              <th scope="col" >Action</th>
+              
+              
+            </tr>
+          </thead>
+          <tbody id="table" class="text-white">
+           
+          
+          </tbody>
+        </table>
+      </div>
+   
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+
+label{
+    color:#F8F4EC;
+    /* color:#D63484; */
+    font-weight: bold;
+    font-size: 25px;
+  }
+ 
+
+  h1{
+    color: #F2F1EB;
+    font-size: 45px;
+    font-weight: bolder;
+
+  }
+
+  .btnAdd{
+    color: #F8F4EC;
+    font-size: 20px;
+    background-color: #65B741;
+  }
+
+  table thead ,table tbody {
+    color: #F8F4EC;
+    font-size: 25px;
+    /* background-color: #74DBEF; */
+  }
+
+  body{
+    background-color: #1B3764;
+  }
+ table thead{
+  color: #A0E418;
+ }
+
+
+
+
+
+
+ @media screen and (max-width: 992px) {
+  .parent {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .parent {
+    width: 100%;
+  }
+}
